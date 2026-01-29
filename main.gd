@@ -6,6 +6,8 @@ extends Node2D
 var timer := 0.0
 
 func _process(delta: float) -> void:
+	if GameManager.is_game_over:
+		return
 	timer += delta
 	if timer >= spawn_rate:
 		spawn_block()

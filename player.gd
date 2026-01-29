@@ -4,6 +4,10 @@ extends CharacterBody2D
 
 @warning_ignore("unused_parameter")
 func _physics_process(delta):
+	if GameManager.is_game_over:
+		velocity = Vector2.ZERO
+		return
+	
 	var direction = 0
 
 	if Input.is_action_pressed("ui_left"):
@@ -24,5 +28,4 @@ func _physics_process(delta):
 			
 
 func die():
-	print("Game Over")
-	get_tree().paused = true
+	GameManager.game_over()

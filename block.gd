@@ -5,6 +5,9 @@ extends CharacterBody2D
 
 
 func _physics_process(delta: float) -> void:
+	if GameManager.is_game_over:
+		velocity = Vector2.ZERO
+		return
 	
 	velocity.y = fall_speed;
 	move_and_slide()
