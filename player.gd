@@ -16,3 +16,13 @@ func _physics_process(delta):
 	
 	var screen_size = get_viewport_rect().size
 	position.x = clamp(position.x, 20, screen_size.x - 20)
+	
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		if collision.get_collider().is_in_group("danger"):
+			die()
+			
+
+func die():
+	print("Game Over")
+	get_tree().paused = true

@@ -8,7 +8,7 @@ size = Vector2(40, 40)
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_im0tn"]
 size = Vector2(40, 40)
 
-[node name="Block" type="CharacterBody2D" unique_id=1418467363]
+[node name="Block" type="CharacterBody2D" unique_id=1357274568 groups=["danger"]]
 script = ExtResource("1_im0tn")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1052763868]

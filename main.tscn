@@ -19,7 +19,6 @@ position = Vector2(576, 600)
 script = ExtResource("1_ig7tw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=2653685]
-position = Vector2(34030.25, -48101)
 shape = SubResource("RectangleShape2D_7dm0k")
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=760154073]
