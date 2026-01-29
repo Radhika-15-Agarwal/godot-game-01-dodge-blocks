@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://ik5i2nrgup1y"]
 
-[ext_resource type="Script" uid="uid://wvvfddsuyj8f" path="res://main.gd" id="1_0xm2m"]
-[ext_resource type="Script" uid="uid://c04hbeghm0jd7" path="res://player.gd" id="1_ig7tw"]
-[ext_resource type="PackedScene" uid="uid://ctfevdcf0lkca" path="res://block.tscn" id="2_h2yge"]
+[ext_resource type="Script" uid="uid://wvvfddsuyj8f" path="res://scripts/main.gd" id="1_sugp2"]
+[ext_resource type="PackedScene" uid="uid://ctfevdcf0lkca" path="res://scenes/block.tscn" id="2_jyhfs"]
+[ext_resource type="Script" uid="uid://c04hbeghm0jd7" path="res://scripts/player.gd" id="3_tbgi4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_7dm0k"]
 size = Vector2(40, 40)
@@ -11,12 +11,12 @@ size = Vector2(40, 40)
 size = Vector2(40, 40)
 
 [node name="Main" type="Node2D" unique_id=1439120309]
-script = ExtResource("1_0xm2m")
-block_scene = ExtResource("2_h2yge")
+script = ExtResource("1_sugp2")
+block_scene = ExtResource("2_jyhfs")
 
 [node name="Player" type="CharacterBody2D" parent="." unique_id=355370817]
 position = Vector2(576, 600)
-script = ExtResource("1_ig7tw")
+script = ExtResource("3_tbgi4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=2653685]
 shape = SubResource("RectangleShape2D_7dm0k")
