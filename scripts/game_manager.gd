@@ -25,6 +25,9 @@ func restart_game():
 	get_tree().reload_current_scene()
 	
 func _unhandled_input(event):
+	if event.is_action_pressed("ui_cancel"):
+		get_tree().quit()
+		
 	if is_game_over and event.is_action_pressed("ui_accept"):
 		restart_game()
 		
