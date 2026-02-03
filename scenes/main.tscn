@@ -44,3 +44,19 @@ Press Enter to Restart"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
+
+[node name="ScoreLabel" type="Label" parent="UI" unique_id=1318630618 groups=["score_label"]]
+custom_minimum_size = Vector2(0, 10)
+offset_left = 10.0
+offset_top = 10.0
+offset_right = 71.0
+offset_bottom = 33.0
+text = "Score: 0"
+
+[node name="HighScoreLabel" type="Label" parent="UI" unique_id=1218057234 groups=["high_score_label"]]
+offset_left = 10.0
+offset_top = 40.0
+offset_right = 124.0
+offset_bottom = 63.0
+text = "High Score: 0"
+metadata/_edit_use_anchors_ = true

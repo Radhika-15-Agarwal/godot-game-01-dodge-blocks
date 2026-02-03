@@ -9,7 +9,7 @@ func _physics_process(delta: float) -> void:
 		velocity = Vector2.ZERO
 		return
 	
-	velocity.y = fall_speed;
+	velocity.y = fall_speed + GameManager.score * 0.5;
 	move_and_slide()
 	
 	if position.y > 700:
